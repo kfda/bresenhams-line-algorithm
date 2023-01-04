@@ -26,15 +26,10 @@ export class LineDraw {
 		let y2 = this.endPoint.y;
 		
 		let dx = Math.abs(x2 - x1);
-		console.log("dx: " + dx);
 		let dy = Math.abs(y2 - y1);
-		console.log("dy: " + dy);
 		let sx = (x1 < x2) ? 1 : -1;
-		console.log("sx: " + sx);
 		let sy = (y1 < y2) ? 1 : -1;
-		console.log("sy: " + sy);
 		let err = dx - dy;
-		console.log("err: " + err);
 		
 		while (true) {
 			console.log(`(${x1}, ${y1})`);
